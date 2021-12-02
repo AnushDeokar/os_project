@@ -64,6 +64,14 @@ const myposts = [
     url:"blog3",
     time:"3"
   },
+  {
+    id: 4,
+    title: "Using a Real-Time Operating System for Multitasking in Remote Patient Monitoring",
+    bodyText:"One of the more interesting areas of application of real time operating systems is required to reduce overall healthcare costs and provide real time alerts for various acute diseases  ,thus improving the possibility of intervention before any casuality  .... READ MORE",
+    tags:[{id:1, name:"Research Review"}],
+    url:"blog4",
+    time:"3"
+  },
 
 
 ]
