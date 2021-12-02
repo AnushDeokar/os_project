@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import readingTime from "reading-time";
+import React from "react";
+// import readingTime from "reading-time";
 import { useHistory } from "react-router-dom";
 
 import {

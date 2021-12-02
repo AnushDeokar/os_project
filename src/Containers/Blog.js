@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { gql } from "apollo-boost";
 import { useQuery } from '@apollo/react-hooks';
 
@@ -69,7 +69,7 @@ const myposts = [
 ]
 
 const Blog = () => {
-  const [posts, setPosts] = useState([]);
+  // const [posts, setPosts] = useState([]);
   const { loading, error, data } = useQuery(GET_POSTS);
 
   useEffect(() => {
@@ -78,9 +78,9 @@ const Blog = () => {
         console.error(error)
       }
 
-      if (data) {
-        setPosts(data?.repository?.issues?.nodes)
-      }
+      // if (data) {
+      //   setPosts(data?.repository?.issues?.nodes)
+      // }
     }
   }, [loading, error, data]);
 

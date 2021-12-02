@@ -1,10 +1,10 @@
 import React from "react";
 import CommentsSection from "./CommentsSection";
-import { PostContainer, PostTitle, PostDate, PostDateLink, PostReaction, BackButton } from "../Components/Post";
+import { PostContainer, PostTitle, PostDate,  BackButton } from "../Components/Post";
 import { AuthorDetails, AuthorAvatar, AuthorName } from "../Components/Post/Author";
 import logo from "../Components/avatar.png";
 import Markdown from "markdown-to-jsx";
-import { HyperLink, CodeBlock } from '../Components/Markdown/Overrides';
+// import { HyperLink, CodeBlock } from '../Components/Markdown/Overrides';
 import img1 from './blog2img1.PNG'
 import img2 from './blog2img2.PNG'
 
@@ -94,7 +94,7 @@ const Blog1 = () => {
             Network time protocol 
             </Markdown>
 
-            <img src={img1}/>
+            <img src={img1} alt=""/>
 
             <br/>
             <br/>
@@ -150,7 +150,7 @@ const Blog1 = () => {
             <br/>
 
             <Markdown>
-            2. If the message is sent to process Pj then set the events timestamp to f(pi)
+            2. If the message is sent to process Pj then set the events timestamp to f of pi
             </Markdown>
 
             <br/>
@@ -163,7 +163,7 @@ const Blog1 = () => {
             
             </Markdown>
             <br/><br/>
-            <img src={img2}/>
+            <img src={img2} alt=""/>
             <br/><br/>
             <Markdown>
             2. It must not be possible for a process requiring access to a critical section to be delayed indefinitely; no deadlock or starvation can be allowed.

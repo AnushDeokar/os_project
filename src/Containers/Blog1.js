@@ -1,10 +1,10 @@
 import React from "react";
 import CommentsSection from "./CommentsSection";
-import { PostContainer, PostTitle, PostDate, PostDateLink, PostReaction, BackButton } from "../Components/Post";
+import { PostContainer, PostTitle, PostDate,  BackButton } from "../Components/Post";
 import { AuthorDetails, AuthorAvatar, AuthorName } from "../Components/Post/Author";
 import logo from "../Components/avatar.png";
 import Markdown from "markdown-to-jsx";
-import { HyperLink, CodeBlock } from '../Components/Markdown/Overrides';
+// import { HyperLink, CodeBlock } from '../Components/Markdown/Overrides';
 import img1 from './blog1img1.PNG'
 
 const comments = [{
@@ -54,7 +54,7 @@ Concurrent processing also helps increase the throughput which is No. of instruc
           <Markdown>
           Concurrent processing also helps increase the throughput which is No. of instructions/unit time 
           </Markdown>
-            <img src={img1}/>
+            <img src={img1} alt=""/>
 
             <Markdown>
             The main problem in synchronizing processes is sharing of global variables and allocation of resources
