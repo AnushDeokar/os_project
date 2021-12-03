@@ -10,6 +10,7 @@ import Blog5 from "./Containers/Blog5";
 import Blog6 from "./Containers/Blog6";
 import Blog7 from "./Containers/Blog7";
 import Blog8 from "./Containers/Blog8";
+import Blog9 from "./Containers/Blog9";
 
 
 // import BlogPost from "./Containers/BlogPost";
@@ -31,6 +32,7 @@ const Router = () => {
         <Route exact path="/blog6" component={Blog6}/>
         <Route exact path="/blog7" component={Blog7}/>
         <Route exact path="/blog8" component={Blog8}/>
+        <Route exact path="/blog9" component={Blog9}/>
       </Switch>
     </HashRouter>
   );

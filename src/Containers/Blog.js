@@ -105,6 +105,14 @@ const myposts = [
     url:"blog8",
     time:"7"
   },
+  {
+    id: 9,
+    title: "Fault Avoidance & Fault Treatment",
+    bodyText:"As it is known that, faults in a computer system may stem from the hardware or from 'bugs' in the software. The various ways of avoiding each of these types of fault are discussed next.. ...READ MORE",
+    tags:[{id:1, name:"General"}],
+    url:"blog9",
+    time:"2"
+  },
 
 
 ]
