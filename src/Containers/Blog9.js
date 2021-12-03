@@ -5,7 +5,7 @@ import { AuthorDetails, AuthorAvatar, AuthorName } from "../Components/Post/Auth
 import logo from "../Components/avatar.png";
 import Markdown from "markdown-to-jsx";
 // import { HyperLink, CodeBlock } from '../Components/Markdown/Overrides';
-import img1 from './blog1img1.PNG'
+// import img1 from './blog1img1.PNG'
 
 import 'katex/dist/katex.min.css';
 
