@@ -72,6 +72,22 @@ const myposts = [
     url:"blog4",
     time:"3"
   },
+  {
+    id: 5,
+    title: "Critical Section Problem",
+    bodyText:"A critical section is a portion of code that a signal process can access at a specified point in time. Other processes must be able to access the shared data resources in this area. ...READ MORE",
+    tags:[{id:1, name:"Tutorial"}],
+    url:"blog5",
+    time:"2"
+  },
+  {
+    id: 6,
+    title: "Case Study on Reliability Assessment",
+    bodyText:"In this blog, we will be looking at a method for empirically estimating reliability of operating systems presented in a recent research paper. The literature tells us ...READ MORE",
+    tags:[{id:1, name:"Research Review"}],
+    url:"blog6",
+    time:"2"
+  },
 
 
 ]

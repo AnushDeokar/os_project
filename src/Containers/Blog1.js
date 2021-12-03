@@ -7,6 +7,9 @@ import Markdown from "markdown-to-jsx";
 // import { HyperLink, CodeBlock } from '../Components/Markdown/Overrides';
 import img1 from './blog1img1.PNG'
 
+import 'katex/dist/katex.min.css';
+
+
 const comments = [{
     id:1,
     body: "Very Nice Blog",
@@ -15,6 +18,8 @@ const comments = [{
     }
 ]
 
+
+// const Markdown1 = (props) => <ReactMarkdown {..._mapProps(props)} />;
 
 const Blog1 = () => {
 
@@ -43,6 +48,17 @@ const Blog1 = () => {
                     </div>
                 </AuthorDetails>
                 </div>
+
+
+    
+
+
+
+
+
+
+
+
 
                 <Markdown>
             System synchronization is a mechanism through which we tend to optimize our output and throughput from the processor . This is achieved by Interleaving different atomic tasks of process/thread in time to give them a simultaneous appearance . This is different from parallel processing which involves multiple cores. Here actual overlap takes place .

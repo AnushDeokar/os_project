@@ -6,6 +6,8 @@ import Blog1 from "./Containers/Blog1";
 import Blog2 from "./Containers/Blog2";
 import Blog3 from "./Containers/Blog3";
 import Blog4 from "./Containers/Blog4";
+import Blog5 from "./Containers/Blog5";
+import Blog6 from "./Containers/Blog6";
 
 // import BlogPost from "./Containers/BlogPost";
 
@@ -22,6 +24,8 @@ const Router = () => {
         <Route exact path="/blog2" component={Blog2}/>
         <Route exact path="/blog3" component={Blog3}/>
         <Route exact path="/blog4" component={Blog4}/>
+        <Route exact path="/blog5" component={Blog5}/>
+        <Route exact path="/blog6" component={Blog6}/>
       </Switch>
     </HashRouter>
   );
