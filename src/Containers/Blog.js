@@ -97,6 +97,14 @@ const myposts = [
     url:"blog7",
     time:"2"
   },
+  {
+    id: 8,
+    title: "COOPERATIVE MULTITHREADING IN DYNAMICALLY RECONFIGURABLE SYSTEMS",
+    bodyText:"Multithreaded programming is an increasingly popular way to express concurrency in applications. It allows to decompose an application into separate threads of synchronized execution. ...READ MORE",
+    tags:[{id:1, name:"Research Review"}],
+    url:"blog8",
+    time:"7"
+  },
 
 
 ]
