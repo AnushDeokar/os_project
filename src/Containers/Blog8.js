@@ -37,7 +37,7 @@ const Blog8 = () => {
         <div>
             <PostContainer>
                 <BackButton onClick={() => onBackClick()}>Back</BackButton>
-                <PostTitle>Process and thread synchronization in Windows systems</PostTitle>
+                <PostTitle>Cooperative Multithreading</PostTitle>
                 
                 <div>
                 <AuthorDetails>
@@ -45,7 +45,7 @@ const Blog8 = () => {
                     <div>
                         <AuthorName>Shantanu Bakshi</AuthorName>
                         <PostDate>
-                            30Nov 5 Min Read .
+                            20 Nov 5 Min Read .
                         </PostDate>
                     </div>
                 </AuthorDetails>

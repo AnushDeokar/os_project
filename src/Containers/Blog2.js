@@ -39,7 +39,7 @@ const Blog1 = () => {
                     <div>
                         <AuthorName>Shantanu Bakshi</AuthorName>
                         <PostDate>
-                            30Nov 3 Min Read .
+                            15 Oct 3 Min Read .
                         </PostDate>
                     </div>
                 </AuthorDetails>

@@ -7,6 +7,7 @@ import Markdown from "markdown-to-jsx";
 // import { HyperLink, CodeBlock } from '../Components/Markdown/Overrides';
 import img1 from './blog1img1.PNG'
 
+
 import 'katex/dist/katex.min.css';
 
 
@@ -48,10 +49,6 @@ const Blog1 = () => {
                     </div>
                 </AuthorDetails>
                 </div>
-
-
-    
-
 
 
 
@@ -271,8 +268,6 @@ Concurrent processing also helps increase the throughput which is No. of instruc
 
             <br/>
             <br/>
-
-
 
 
 

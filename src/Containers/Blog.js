@@ -40,7 +40,15 @@ const GET_POSTS = gql`
 
 
 const myposts = [
-  {
+    {
+      id: 4,
+      title: "Using a Real-Time Operating System for Multitasking in Remote Patient Monitoring",
+      bodyText:"One of the more interesting areas of application of real time operating systems is required to reduce overall healthcare costs and provide real time alerts for various acute diseases  ,thus improving the possibility of intervention before any casuality  .... READ MORE",
+      tags:[{id:1, name:"Research Review"}],
+      url:"blog4",
+      time:"3"
+    },
+    {
     id: 1,
     title: "Process and thread synchronization in Windows systems",
     bodyText:"System synchronization is a mechanism through which we tend to optimize our output and throughput from the processor . This is achieved by Interleaving different atomic tasks of process/thread in time to give them a ...READ MORE",
@@ -64,14 +72,7 @@ const myposts = [
     url:"blog3",
     time:"3"
   },
-  {
-    id: 4,
-    title: "Using a Real-Time Operating System for Multitasking in Remote Patient Monitoring",
-    bodyText:"One of the more interesting areas of application of real time operating systems is required to reduce overall healthcare costs and provide real time alerts for various acute diseases  ,thus improving the possibility of intervention before any casuality  .... READ MORE",
-    tags:[{id:1, name:"Research Review"}],
-    url:"blog4",
-    time:"3"
-  },
+
   {
     id: 5,
     title: "Critical Section Problem",

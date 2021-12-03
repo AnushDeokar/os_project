@@ -44,7 +44,7 @@ const Blog4 = () => {
                     <div>
                         <AuthorName>Shantanu Bakshi</AuthorName>
                         <PostDate>
-                            20Oct 3 Min Read .
+                            25 oct 3 Min Read .
                         </PostDate>
                     </div>
                 </AuthorDetails>
@@ -207,8 +207,10 @@ Our requirements are that the system must adhere to real time processing speed r
 Also hierarchical priority (point d) can also be used to reduce network congestion since only high priority data is sent over the network . It can also preserve the processing of certain components like ECG data by selectively giving them high priority.
 
             </Markdown>
-
-                <CommentsSection comments = {comments}/>
+<br/><br/>
+<Markdown>
+            Reference : M. Rockwood, V. Joshi, K. Sullivan and R. Goubran, "Using a real-time operating system for multitasking in Remote Patient Monitoring," 2014 IEEE International Symposium on Medical Measurements and Applications (MeMeA), 2014, pp. 1-5, doi: 10.1109/MeMeA.2014.6860109.
+       </Markdown>         <CommentsSection comments = {comments}/>
             </PostContainer>
         </div>
     )

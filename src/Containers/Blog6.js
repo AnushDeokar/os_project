@@ -45,9 +45,9 @@ const Blog6 = () => {
                 <AuthorDetails>
                     <AuthorAvatar src={logo} />
                     <div>
-                        <AuthorName>Toshant Narula</AuthorName>
+                        <AuthorName>Anush Deokar</AuthorName>
                         <PostDate>
-                            30Nov 5 Min Read .
+                            10Nov 5 Min Read .
                         </PostDate>
                     </div>
                 </AuthorDetails>
@@ -58,8 +58,7 @@ const Blog6 = () => {
             ##Introduction
          
           </Markdown>
-            <br/>
-            <br/>
+ 
           <Markdown>
           In this blog, we will be looking at a method for empirically estimating reliability of operating systems presented in a recent research paper. The literature tells us that the main cause of failures in computer systems are defects in the software but still there has not been enough research about estimating reliability of operating systems. By analyzing the data about failures, collected from different machines with different environments, researchers have tried to build a method for the estimation of reliability of systems. 
           </Markdown>
@@ -78,8 +77,6 @@ const Blog6 = () => {
             </Markdown>
 
 
-            <br/>
-            <br/>
 
 
             <Markdown>
