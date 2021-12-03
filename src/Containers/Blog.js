@@ -89,6 +89,15 @@ const myposts = [
     time:"2"
   },
 
+  {
+    id: 7,
+    title: "Error Detection & Error Recovery",
+    bodyText:"Error detection refers to finding out the error - the deviation from a component's specified behaviour. The key component of error detection is redundancy - that is, the we  ...READ MORE",
+    tags:[{id:1, name:"General"}],
+    url:"blog7",
+    time:"2"
+  },
+
 
 ]
 
