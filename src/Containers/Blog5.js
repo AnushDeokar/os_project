@@ -4,9 +4,8 @@ import { PostContainer, PostTitle, PostDate,  BackButton } from "../Components/P
 import { AuthorDetails, AuthorAvatar, AuthorName } from "../Components/Post/Author";
 import logo from "../Components/avatar.png";
 import Markdown from "markdown-to-jsx";
-// import { HyperLink, CodeBlock } from '../Components/Markdown/Overrides';
-import img1 from './blog2img1.PNG'
-import img2 from './blog2img2.PNG'
+import { HyperLink, CodeBlock } from '../Components/Markdown/Overrides';
+
 
 const comments = [{
     id:1,
@@ -60,9 +59,6 @@ const Blog5 = () => {
             </Markdown>
 
 
-            <br/>
-            <br/>
-
 
             <Markdown>
             These three rules must be followed in the critical section
@@ -92,7 +88,7 @@ const Blog5 = () => {
             3. Mutual Exclusion: It  is a sort of binary semaphore that is used to limit access to a shared resource. To avoid extended priority inversion concerns, it features a priority inheritance mechanism. At any given time, only one process can run in its crucial part.
             </Markdown>
 
-            <img src={img1} alt=""/>
+          
 
             <br/>
             <br/>
@@ -100,8 +96,7 @@ const Blog5 = () => {
             <Markdown>
             ##Solutions To The Critical Section
             </Markdown>
-            <br/>
-            <br/>
+
 
             <Markdown>
             Peterson Solution
@@ -127,21 +122,24 @@ const Blog5 = () => {
             
             Advantages
 </Markdown>
-<br/><br/>
+
             <Markdown>
-            There is also an algorithm that formalizes the assignment of time to process events called lamport algorithm which has the following steps.
+            1. It ensures Mutual Exclusion since only one operation at a time has access to the vital region.
 </Markdown>
 <br/><br/>
 
             <Markdown>
-1. Let Pi be a process sending event then it should increment its count f(pi)+=1; where f(pi) is its clock value.
+2. It ensures progress since no processes are slowed by external activities.
+
             </Markdown>
 
             <br/>
             <br/>
 
             <Markdown>
-            2. If the message is sent to process Pj then set the events timestamp to f of pi
+            3. It ensures Bound Waiting by giving each process a chance.
+ 
+
             </Markdown>
 
             <br/>
@@ -150,48 +148,98 @@ const Blog5 = () => {
             <Markdown>
             
 
-            3. After the event is received by process Pj its clock is set to the max of  f(pj),f(pi)  and returns to step 1.
+```         
+PROCESS Pi
+FLAG[i] = true
+while( (turn != i) AND (CS is !free) ) then wait;
+
+CRITICAL SECTION FLAG[i] = false
+turn = j; //choose another process to go to CS
+```
+
             
             </Markdown>
-            <br/><br/>
-            <img src={img2} alt=""/>
-            <br/><br/>
-            <Markdown>
-            2. It must not be possible for a process requiring access to a critical section to be delayed indefinitely; no deadlock or starvation can be allowed.
-            </Markdown>
+
             <br/><br/>
 
             <Markdown>
-            ##Vector clocks
+            ##Mutex Locks
             </Markdown>
 
 
-            <br/>
-            <br/>
-
             <Markdown>
 
-            Are basically a more advanced version of logical clocks in which each process keeps a vector of variables Xi[j] where j is Process pj and Xi[j] denotes events occurred at process pj . This helps to maintain a knowledge of the number of events to each process .
+            Because synchronisation hardware is a difficult approach to install for everyone, Mutex Locks were introduced as a tight software method. In this approach, a LOCK is obtained over the crucial resources used inside the critical region in the entry part of code. This lock is released in the exit section.
             </Markdown>
 
             <br/><br/>
 
             <Markdown>
 
-            This is helpful in exacting the knowledge of causality of various processes .
+            ## Semaphore Solution
             </Markdown>
 
-            <br/><br/>
+            
 
 
             <Markdown>
-            Conclusion :- Hence we have the following clock mechanisms to enforce synchronization in distributed operating systems , namely logical, vector and physical clocks.
-
+            Semaphore is a non-negative variable that is shared between threads. It's a different algorithm or solution to the problem of the critical section. It's a signalling mechanism, as well as a thread that's waiting for a semaphore to be signalled by another thread.
             </Markdown>
 
             <br/>
             <br/>
 
+            
+
+            <Markdown
+            options={{
+                overrides: {
+                  a: {
+                    component: HyperLink
+                  },
+                  pre: {
+                    component: CodeBlock
+                  }
+                }
+              }}
+            
+            >
+            ```
+            WAIT ( S ):
+            ```
+            </Markdown>
+
+              <br/>
+            <Markdown
+            
+            
+            >
+            ```
+            while ( S is less than equal to 0 );
+            ```
+            </Markdown>
+<br/>
+            <Markdown >
+            ```
+            S = S - 1;
+            ```
+            </Markdown>
+<br/>
+            <Markdown >
+            ```
+            SIGNAL ( S ):
+            ```
+            </Markdown>
+<br/>
+            <Markdown >
+            ```
+            S = S + 1;
+            ```
+            </Markdown>
+              <br/><br/>
+              <Markdown>##Quiz Time</Markdown>
+   
+              <Markdown>How many variables s/are required to be shared between processes to solve the critical section problem?</Markdown>
 
 
 
